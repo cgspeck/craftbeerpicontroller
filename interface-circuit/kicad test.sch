@@ -247,13 +247,7 @@ $EndComp
 Wire Wire Line
 	7350 2700 7400 2700
 Wire Wire Line
-	7700 2900 7700 3150
-Wire Wire Line
-	7700 3150 7700 3800
-Wire Wire Line
-	7700 3800 7700 4200
-Wire Wire Line
-	7700 4200 7700 5100
+	7700 2900 7700 5100
 Wire Wire Line
 	6650 3300 7050 3300
 Wire Wire Line
@@ -263,11 +257,7 @@ GPIO23
 Wire Wire Line
 	7950 2400 7950 1450
 Wire Wire Line
-	7950 1450 8100 1450
-Wire Wire Line
-	8100 1450 8500 1450
-Wire Wire Line
-	8500 1450 9000 1450
+	7950 1450 9000 1450
 Text Label 6850 3500 0    60   ~ 0
 GPIO25
 Wire Wire Line
@@ -282,21 +272,13 @@ Wire Wire Line
 Wire Wire Line
 	8200 3050 8500 3050
 Wire Wire Line
-	7400 3150 7700 3150
-Wire Wire Line
-	7700 3150 8500 3150
+	7400 3150 8500 3150
 Connection ~ 7700 3150
 Wire Wire Line
-	9000 1450 9000 3450
-Wire Wire Line
-	9000 3450 9000 3700
+	9000 1450 9000 3700
 Connection ~ 9000 1450
 Wire Wire Line
-	7700 3800 8200 3800
-Wire Wire Line
-	8200 3800 8850 3800
-Wire Wire Line
-	8850 3800 9000 3800
+	7700 3800 9000 3800
 Connection ~ 7700 3800
 Wire Wire Line
 	8850 3750 8850 3800
@@ -305,9 +287,7 @@ Wire Wire Line
 	8850 3450 9000 3450
 Connection ~ 9000 3450
 Wire Wire Line
-	6650 4200 7700 4200
-Wire Wire Line
-	7700 4200 10000 4200
+	6650 4200 10000 4200
 Connection ~ 7700 4200
 $Comp
 L Conn_01x02 J8
@@ -335,9 +315,7 @@ GPIO4
 Wire Wire Line
 	6650 2500 6650 2600
 Wire Wire Line
-	4950 2500 5150 2500
-Wire Wire Line
-	5150 2500 6650 2500
+	4950 2500 6650 2500
 Text Label 5200 2500 0    60   ~ 0
 5V
 Wire Wire Line

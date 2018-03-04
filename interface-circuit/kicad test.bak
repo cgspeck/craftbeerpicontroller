@@ -269,7 +269,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 1450 9000 1450
 Text Label 6850 3500 0    60   ~ 0
-GPIO24
+GPIO25
 Wire Wire Line
 	6650 3600 7150 3600
 Wire Wire Line
