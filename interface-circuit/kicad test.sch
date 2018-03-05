@@ -247,13 +247,7 @@ $EndComp
 Wire Wire Line
 	7350 2700 7400 2700
 Wire Wire Line
-	7700 2900 7700 3150
-Wire Wire Line
-	7700 3150 7700 3800
-Wire Wire Line
-	7700 3800 7700 4200
-Wire Wire Line
-	7700 4200 7700 5100
+	7700 2900 7700 5100
 Wire Wire Line
 	6650 3300 7050 3300
 Wire Wire Line
@@ -263,11 +257,7 @@ GPIO23
 Wire Wire Line
 	7950 2400 7950 1450
 Wire Wire Line
-	7950 1450 8100 1450
-Wire Wire Line
-	8100 1450 8500 1450
-Wire Wire Line
-	8500 1450 9000 1450
+	7950 1450 9000 1450
 Text Label 6850 3500 0    60   ~ 0
 GPIO25
 Wire Wire Line
@@ -282,21 +272,13 @@ Wire Wire Line
 Wire Wire Line
 	8200 3050 8500 3050
 Wire Wire Line
-	7400 3150 7700 3150
-Wire Wire Line
-	7700 3150 8500 3150
+	7400 3150 8500 3150
 Connection ~ 7700 3150
 Wire Wire Line
-	9000 1450 9000 3450
-Wire Wire Line
-	9000 3450 9000 3700
+	9000 1450 9000 3700
 Connection ~ 9000 1450
 Wire Wire Line
-	7700 3800 8200 3800
-Wire Wire Line
-	8200 3800 8850 3800
-Wire Wire Line
-	8850 3800 9000 3800
+	7700 3800 9000 3800
 Connection ~ 7700 3800
 Wire Wire Line
 	8850 3750 8850 3800
@@ -305,21 +287,8 @@ Wire Wire Line
 	8850 3450 9000 3450
 Connection ~ 9000 3450
 Wire Wire Line
-	6650 4200 7700 4200
-Wire Wire Line
-	7700 4200 10000 4200
+	6650 4200 10000 4200
 Connection ~ 7700 4200
-$Comp
-L Conn_01x02 J8
-U 1 1 5A8CE6B4
-P 4750 3250
-F 0 "J8" H 4750 3350 50  0000 C CNN
-F 1 "PiScreen Power" H 4750 3050 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 4750 3250 50  0001 C CNN
-F 3 "" H 4750 3250 50  0001 C CNN
-	1    4750 3250
-	-1   0    0    -1  
-$EndComp
 Text Label 6950 4150 0    60   ~ 0
 GND
 Wire Wire Line
@@ -335,9 +304,7 @@ GPIO4
 Wire Wire Line
 	6650 2500 6650 2600
 Wire Wire Line
-	4950 2500 5150 2500
-Wire Wire Line
-	5150 2500 6650 2500
+	4950 2500 6650 2500
 Text Label 5200 2500 0    60   ~ 0
 5V
 Wire Wire Line
@@ -370,7 +337,7 @@ Wire Wire Line
 Wire Wire Line
 	7400 2300 7400 3150
 Wire Wire Line
-	9450 4800 9700 4800
+	9100 4800 9700 4800
 Wire Wire Line
 	7950 2500 7700 2500
 $Comp
@@ -438,19 +405,22 @@ Wire Wire Line
 	9850 1650 9850 1950
 Wire Wire Line
 	9450 1450 9450 4800
-Wire Wire Line
-	5150 2500 5150 3250
-Wire Wire Line
-	5150 3250 4950 3250
 Connection ~ 5150 2500
 Wire Wire Line
 	4950 3000 6150 3000
+$Comp
+L CONN_01X02 J8
+U 1 1 5A9D33AF
+P 9050 5000
+F 0 "J8" H 9050 5150 50  0000 C CNN
+F 1 "ScreenPWR" V 9150 5000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm_SMD_Pin1Right" H 9050 5000 50  0001 C CNN
+F 3 "" H 9050 5000 50  0001 C CNN
+	1    9050 5000
+	0    1    1    0   
+$EndComp
+Connection ~ 9450 4800
 Wire Wire Line
-	4950 3350 5150 3350
-Wire Wire Line
-	5150 3350 5150 3800
-Wire Wire Line
-	5150 3800 6150 3800
-Text Label 5250 3800 0    60   ~ 0
-GND
+	9000 4800 9000 4200
+Connection ~ 9000 4200
 $EndSCHEMATC
