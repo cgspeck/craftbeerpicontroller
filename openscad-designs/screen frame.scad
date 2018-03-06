@@ -1,4 +1,4 @@
-aperture_width = 162;
+aperture_width = 161;
 aperture_height = 94;
 frame_thickness = 2;
 outer_frame_width = 5;
