@@ -1,3 +1,12 @@
+module located_cylinder(radius, height) {
+    translate([0, 0, -1]) {
+        difference() {
+            cylinder(height, r=radius);
+            translate([0, 0, -1]) cylinder(height + 2, r=0.5);
+        }
+    }
+}
+
 module iec_socket(thickness = 4.5, width = 50) {
     rect_width = 31.5;
     edge_width = (width - rect_width) / 2;   
