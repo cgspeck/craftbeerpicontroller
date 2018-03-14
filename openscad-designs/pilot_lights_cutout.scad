@@ -9,6 +9,7 @@ number_of_lights = 5;
 
 spacing = base_width / (number_of_lights + 1);
 
+echo("Spacing ", spacing, "mm");
 
 projection() difference() {
     cube([base_width, base_height, thickness]);
