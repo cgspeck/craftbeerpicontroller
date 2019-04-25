@@ -1,0 +1,22 @@
+#! /usr/bin/python
+import RPi.GPIO as GPIO
+
+import argparse
+import time
+import sys
+
+
+parser = argparse.ArgumentParser(description="Read a GPIO pin")
+
+parser.add_argument('pin', type=int, help='The GPIO pin to read')
+
+args = parser.parse_args()
+
+pin = args.pin
+
+while True:
+    GPIO.setmode(GPIO.BCM)
+    GPIO.setwarnings(False)
+    GPIO.setup(pin, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
+    print("GPIO pin %s is %s" % (pin, GPIO.input(pin)))
+    time.sleep(1)
